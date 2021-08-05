@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Autofac.Extras.DynamicProxy;
 using Business.Abstract;
+using Business.CCS;
 using Business.Concrete;
 using Castle.DynamicProxy;
 using Core.Utilities.Interceptors;
@@ -33,6 +34,10 @@ namespace Business.DependencyResolvers.Autofac
 
             builder.RegisterType<CustomerManager>().As<ICustomerService>().SingleInstance();
             builder.RegisterType<EfCustomerDal>().As<ICustomerDal>().SingleInstance();
+
+            builder.RegisterType<CarImageManager>().As<ICarImageService>().SingleInstance();
+            builder.RegisterType<EfCarImageDal>().As<ICarImageDal>().SingleInstance();
+
 
             //bu kısım yazdığımız validatorların çalışabilmesi için gerekli bir tanımlama, eğer bunu yapmazsak istediğimiz metoda 
             //[ValidationAspect(..)] şeklinde eklediğimiz bloklar çalışmaz.

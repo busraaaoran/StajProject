@@ -29,6 +29,13 @@ namespace Business.Constants
         public static string CustomerAdded = "Müşteri Eklendi.";
         public static string CustomerDeleted = "Müşteri Silindi.";
         public static string CarsListed = "Arabalar listelendi.";
-        internal static string CarInfoDisplayed = "Araba bilgisi listelendi";
+        public static string CarInfoDisplayed = "Araba bilgisi listelendi";
+        public static string CarBrandCountError = "Bir markaya ait 50den fazla araba olamaz!";
+        internal static string CarLicencePlateAlreadyExists = "Sistemde aynı plakaya sahip bir araba zaten var!";
+        internal static string CarImageAdded;
+        internal static string CarImageDeleted;
+        internal static string CarImageUpdated;
+        internal static string ImagesListed;
+        internal static string CarImageLimitExceeded;
     }
 }
