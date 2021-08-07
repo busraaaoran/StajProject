@@ -1,5 +1,5 @@
 ﻿using Business.Abstract;
-using Entities.Concrete;
+using Core.Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -36,6 +36,18 @@ namespace WebAPI.Controllers
         public IActionResult GetById(int id)
         {
             var result = _customerService.GetById(id);
+
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getbymail")]
+        public IActionResult GetByMail(string email)
+        {
+            var result = _customerService.GetByMail(email);
 
             if (result.Success)
             {

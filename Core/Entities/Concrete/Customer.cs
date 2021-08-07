@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Entities.Concrete
+namespace Core.Entities.Concrete
 {
     public class Customer:IEntity
     {
@@ -17,7 +17,11 @@ namespace Entities.Concrete
 
         public string Email { get; set; }
 
-        public string Password { get; set; }
+        public byte[] PasswordHash { get; set; }
+
+        public byte[] PasswordSalt { get; set; }
+
+        public bool Status { get; set; }
 
     }
 }

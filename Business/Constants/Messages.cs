@@ -1,6 +1,8 @@
-﻿using Entities.Concrete;
+﻿using Core.Entities.Concrete;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
@@ -31,11 +33,18 @@ namespace Business.Constants
         public static string CarsListed = "Arabalar listelendi.";
         public static string CarInfoDisplayed = "Araba bilgisi listelendi";
         public static string CarBrandCountError = "Bir markaya ait 50den fazla araba olamaz!";
-        internal static string CarLicencePlateAlreadyExists = "Sistemde aynı plakaya sahip bir araba zaten var!";
-        internal static string CarImageAdded;
-        internal static string CarImageDeleted;
-        internal static string CarImageUpdated;
-        internal static string ImagesListed;
-        internal static string CarImageLimitExceeded;
+        public static string CarLicencePlateAlreadyExists = "Sistemde aynı plakaya sahip bir araba zaten var!";
+        public static string CarImageAdded = "Araba resmi eklendi.";
+        public static string CarImageDeleted = "Araba resmi silindi.";
+        public static string CarImageUpdated = "Araba resmi güncellendi.";
+        public static string ImagesListed = "Resimler listelendi.";
+        public static string CarImageLimitExceeded = "Bir arabaya ait en fazla 10 resim yükleyebilirsiniz!";
+        public static string AuthorizationDenied = "İşlem için yetkiniz bulunmamaktadır!";
+        public static string CustomerRegistered = "Müşteri kaydoldu.";
+        public static string CustomerNotFound = "Müşteri bulunamadı.";
+        public static string CustomerAlreadyExists = "Müşteri zaten kayıtlı.";
+        public static string AccessTokenCreated = "Token oluşturuldu.";
+        public static string SuccessfulLogin = "Giriş başarılı.";
+        public static string PasswordError = "Şifre hatası!";
     }
 }
