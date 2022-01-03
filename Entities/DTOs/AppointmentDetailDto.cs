@@ -14,5 +14,9 @@ namespace Entities.DTOs
         public string CustomerName { get; set; }
 
         public string ServiceName { get; set; }
+
+        public DateTime ApptDate { get; set; }
+
+        public string LicencePlate { get; set; }
     }
 }

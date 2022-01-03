@@ -26,7 +26,9 @@ namespace DataAccess.Concrete.EntityFramework
                                  ServiceName = s.ServiceName,
                                  ApptId = a.ApptId,
                                  BrandName = b.BrandName,
-                                 CustomerName = cu.FirstName + " " + cu.LastName
+                                 CustomerName = cu.FirstName + " " + cu.LastName,
+                                 ApptDate = a.ApptDate,
+                                 LicencePlate = c.LicencePlate
                              };
                 
                 return result.ToList();

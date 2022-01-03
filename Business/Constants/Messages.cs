@@ -46,5 +46,9 @@ namespace Business.Constants
         public static string AccessTokenCreated = "Token oluşturuldu.";
         public static string SuccessfulLogin = "Giriş başarılı.";
         public static string PasswordError = "Şifre hatası!";
+        public static string ColorsListed = "Renkler listelendi.";
+        public static string CustomersListed = "Müşteriler listelendi.";
+        public static string BrandsListed = "Markalar listelendi.";
+        public static string CarServicesListed = "Araba servisleri listelendi.";
     }
 }

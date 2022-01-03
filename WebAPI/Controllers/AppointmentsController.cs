@@ -82,7 +82,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("getapptdetails")]
-        public IActionResult GetAppointmentDetails(AppointmentDetailDto appointmentDetailDto)
+        public IActionResult GetAppointmentDetails()
         {
             var result = _appointmentService.GetAppointmentDetails();
 
